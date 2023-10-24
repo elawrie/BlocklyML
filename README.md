@@ -24,4 +24,4 @@ Additionally, compilation principles are applied when users construct machine le
 
 ## Peer Review Message
 
-The src available for peer review will be found in the srcPeerReview folder. Here you can perform any edits. The docs folder is there for your guidance as it provides the introduction to the project you read above and instructions on how to run/use our src.
+The src available for peer review will be found in the srcfolder. Here you can perform any edits. The docs folder is there for your guidance as it provides the introduction to the project you read above and instructions on how to run/use our src.
