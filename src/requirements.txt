@@ -1,5 +1,0 @@
-RestrictedPython
-scikit-learn
-Flask
-pandas
-plotnine
