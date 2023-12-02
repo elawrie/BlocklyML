@@ -449,7 +449,7 @@ Blockly.Blocks['predict_model'] = {
       this.appendDummyInput()
         .appendField("Predict with Model")
       this.setOutput(true, 'Number'); 
-      this.setColour(40);
+      this.setColour(25);
       this.setTooltip("Predict using the model");
       this.setHelpUrl("");
     }
@@ -474,7 +474,7 @@ init: function () {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     // this.setOutput(true, "Number");
-    this.setColour(40);
+    this.setColour(25);
     this.setTooltip("Evaluate the accuracy of a regression model using Mean Squared Error (MSE) or R-squared (R²).");
     this.setHelpUrl("");
 }
@@ -514,7 +514,7 @@ Blockly.Blocks['evaluate_classification_model'] = {
         // this.setOutput(true, "Number");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(40);
+        this.setColour(25);
         this.setTooltip("Evaluate the performance of a classification model using Accuracy Score or Confusion Matrix.");
         this.setHelpUrl("");
     }
@@ -595,5 +595,187 @@ Blockly.Blocks['Custom Dataset'] = {
 Blockly.Python['Custom Dataset'] = function(block) {
     var csv_file = block.getFieldValue('csv_file');
     var code = "'" + csv_file + "'".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+// DOCUMENTATION
+
+Blockly.Blocks['penguin_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Penguin Dataset Link');
+        this.setTooltip('Penguin Dataset Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://raw.githubusercontent.com/cmparlettpelleriti/CPSC392ParlettPelleriti/master/Data/penguins.csv");
+    }
+};
+
+Blockly.Python['penguin_link'] = function(block) {
+    var code = "https://raw.githubusercontent.com/cmparlettpelleriti/CPSC392ParlettPelleriti/master/Data/penguins.csv".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['iris_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Iris Dataset Link');
+        this.setTooltip('Iris Dataset Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://raw.githubusercontent.com/cmparlettpelleriti/CPSC392ParlettPelleriti/master/Data/iris.csv");
+    }
+};
+
+Blockly.Python['iris_link'] = function(block) {
+    var code = "https://raw.githubusercontent.com/cmparlettpelleriti/CPSC392ParlettPelleriti/master/Data/iris.csv".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['cleaning_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Data Cleaning');
+        this.setTooltip('Data Cleaning Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4");
+    }
+};
+
+Blockly.Python['cleaning_link'] = function(block) {
+    var code = "https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['training_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Model Training');
+        this.setTooltip('Model Training Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://developers.google.com/machine-learning/crash-course/descending-into-ml/training-and-loss");
+    }
+};
+
+Blockly.Python['training_link'] = function(block) {
+    var code = "https://developers.google.com/machine-learning/crash-course/descending-into-ml/training-and-loss".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['viz_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Data Visualizations');
+        this.setTooltip('Data Viz Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.youtube.com/watch?v=ZcJ1NQLSZFM");
+    }
+};
+
+Blockly.Python['viz_link'] = function(block) {
+    var code = "https://www.youtube.com/watch?v=ZcJ1NQLSZFM\n".replace(/^\s+/gm, '');
+    code += "https://www.youtube.com/watch?v=Guh4iA24XVI&t=5s".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['eval_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Model Evaluation');
+        this.setTooltip('Model Evaluation Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.geeksforgeeks.org/machine-learning-model-evaluation/");
+    }
+};
+
+Blockly.Python['eval_link'] = function(block) {
+    var code = "https://www.geeksforgeeks.org/machine-learning-model-evaluation/".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['linear_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Linear Regression');
+        this.setTooltip('Linear Regression Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.youtube.com/watch?v=nHOeSqHf3Yc");
+    }
+};
+
+Blockly.Python['linear_link'] = function(block) {
+    var code = "https://www.youtube.com/watch?v=I2n6cdhC4Sc\n".replace(/^\s+/gm, '');
+    code += "https://www.youtube.com/watch?v=nHOeSqHf3Yc".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['trees_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Tree Based Models');
+        this.setTooltip('Tree Models Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.youtube.com/watch?v=EcyC10su28w");
+    }
+};
+
+Blockly.Python['trees_link'] = function(block) {
+    var code = "https://www.youtube.com/watch?v=EcyC10su28w".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['rf_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Random Forest');
+        this.setTooltip('Random Forest Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.youtube.com/watch?v=J4Wdy0Wc_xQ");
+    }
+};
+
+Blockly.Python['rf_link'] = function(block) {
+    var code = "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ\n".replace(/^\s+/gm, '');
+    code += "https://www.youtube.com/watch?v=sQ870aTKqiM&t=5s".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['logistic_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on Logistic Regression');
+        this.setTooltip('Logistic Regression Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.youtube.com/watch?v=LJXrdW-0V-A");
+    }
+};
+
+Blockly.Python['logistic_link'] = function(block) {
+    var code = "https://www.youtube.com/watch?v=LJXrdW-0V-A\n".replace(/^\s+/gm, '');
+    code += "https://www.youtube.com/watch?v=P8Q1gtF69zY".replace(/^\s+/gm, '');
+    return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['knn_link'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField('Information on the K-Nearest Neighbors Model');
+        this.setTooltip('Tree Models Link');
+        this.setOutput(true, "String");
+        this.setColour(45);
+        this.setHelpUrl("https://www.youtube.com/watch?v=IZeXHeYkdqY&t=5s");
+    }
+};
+
+Blockly.Python['knn_link'] = function(block) {
+    var code = "https://www.youtube.com/watch?v=IZeXHeYkdqY&t=5s".replace(/^\s+/gm, '');
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
