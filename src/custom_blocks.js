@@ -677,7 +677,7 @@ Blockly.Blocks['viz_link'] = {
 
 Blockly.Python['viz_link'] = function(block) {
     var code = "https://www.youtube.com/watch?v=ZcJ1NQLSZFM\n".replace(/^\s+/gm, '');
-    code += "https://www.youtube.com/watch?v=Guh4iA24XVI&t=5s".replace(/^\s+/gm, '');
+    code += "https://www.youtube.com/watch?v=Guh4iA24XVI&".replace(/^\s+/gm, '');
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
@@ -704,7 +704,6 @@ Blockly.Blocks['linear_link'] = {
         this.setTooltip('Linear Regression Link');
         this.setOutput(true, "String");
         this.setColour(45);
-        this.setHelpUrl("https://www.youtube.com/watch?v=nHOeSqHf3Yc");
     }
 };
 
@@ -737,13 +736,12 @@ Blockly.Blocks['rf_link'] = {
         this.setTooltip('Random Forest Link');
         this.setOutput(true, "String");
         this.setColour(45);
-        this.setHelpUrl("https://www.youtube.com/watch?v=J4Wdy0Wc_xQ");
     }
 };
 
 Blockly.Python['rf_link'] = function(block) {
     var code = "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ\n".replace(/^\s+/gm, '');
-    code += "https://www.youtube.com/watch?v=sQ870aTKqiM&t=5s".replace(/^\s+/gm, '');
+    code += "https://www.youtube.com/watch?v=sQ870aTKqiM".replace(/^\s+/gm, '');
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
@@ -754,7 +752,6 @@ Blockly.Blocks['logistic_link'] = {
         this.setTooltip('Logistic Regression Link');
         this.setOutput(true, "String");
         this.setColour(45);
-        this.setHelpUrl("https://www.youtube.com/watch?v=LJXrdW-0V-A");
     }
 };
 
@@ -771,11 +768,11 @@ Blockly.Blocks['knn_link'] = {
         this.setTooltip('Tree Models Link');
         this.setOutput(true, "String");
         this.setColour(45);
-        this.setHelpUrl("https://www.youtube.com/watch?v=IZeXHeYkdqY&t=5s");
+        this.setHelpUrl("https://www.youtube.com/watch?v=IZeXHeYkdqY&t");
     }
 };
 
 Blockly.Python['knn_link'] = function(block) {
-    var code = "https://www.youtube.com/watch?v=IZeXHeYkdqY&t=5s".replace(/^\s+/gm, '');
+    var code = "https://www.youtube.com/watch?v=IZeXHeYkdqY&".replace(/^\s+/gm, '');
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
