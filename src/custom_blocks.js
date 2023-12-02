@@ -548,7 +548,7 @@ Blockly.Blocks['Penguins Dataset'] = {
         this.appendDummyInput()
             .appendField("Penguins Dataset");
         this.setOutput(true, "String"); // Change the output type to "String"
-        this.setColour('#FFA500');
+        this.setColour(180);
         this.setTooltip("Penguins Dataset");
         this.setHelpUrl("");
     }
@@ -567,7 +567,7 @@ init: function () {
     this.appendDummyInput()
         .appendField("Iris Dataset")
     this.setOutput(true, "String");
-    this.setColour('#FFA500');
+    this.setColour(180);
     this.setTooltip("Iris Dataset");
     this.setHelpUrl("");
 }
@@ -586,7 +586,7 @@ Blockly.Blocks['Custom Dataset'] = {
             .appendField(new Blockly.FieldTextInput('sample.csv'), 'csv_file')
             .appendField('Dataset');
         this.setOutput(true, "String");
-        this.setColour('#FFA500');
+        this.setColour(180);
         this.setTooltip("Custom CSV input");
         this.setHelpUrl("");
     }
