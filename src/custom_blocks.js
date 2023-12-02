@@ -60,7 +60,7 @@ init: function () {
         .setCheck('String')
         .appendField("Normalize Data");
     this.setOutput(true, 'String');
-    this.setColour(240);
+    this.setColour(270);
     this.setTooltip("Normalize the input data between 0 and 1.");
     this.setHelpUrl('');
 }
@@ -103,7 +103,7 @@ init: function () {
         .setCheck("String")
         .appendField("Drop Null Values from Array");
     this.setOutput(true, 'String');
-    this.setColour(240);
+    this.setColour(270);
     this.setTooltip("Remove null (missing) values from the input array.");
     this.setHelpUrl("");
 }
@@ -143,7 +143,7 @@ Blockly.Blocks['attribute_selection'] = {
             .appendField("Attributes:")
             .appendField(new Blockly.FieldTextInput("attr1,attr2"), "SELECTED_ATTRIBUTES");
         this.setOutput(true, "String");
-        this.setColour('green');
+        this.setColour(270);
         this.setTooltip("Select specific attributes from the input array.");
         this.setHelpUrl("");
     }
@@ -201,7 +201,7 @@ Blockly.Blocks['scatterplot'] = {
                 ]), 'THEME');
         // this.setPreviousStatement(true, null);
         // this.setNextStatement(true, null);
-        this.setColour(270);
+        this.setColour(240);
         this.setTooltip("Create a scatterplot from the input data.");
         this.setHelpUrl("");
     }
@@ -245,7 +245,7 @@ init: function () {
             ]), 'THEME');
     // this.setPreviousStatement(true, null);
     // this.setNextStatement(true, null);
-    this.setColour(270);
+    this.setColour(240);
     this.setTooltip("Create a bar chart from the input data.");
     this.setHelpUrl("");
 }
