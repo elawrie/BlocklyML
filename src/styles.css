@@ -19,12 +19,12 @@ body, html {
 }
 .half-width {
     width: 49%;
-    height: 200px;
-    border: 1px solid black;
+    height: 100px;
+    /* border: 1px solid black; */
     padding: 10px;
     overflow: auto;
 }
 .button-row {
-    height: 50px; /* or whatever height you want */
+    height: 200px; /* or whatever height you want */
     justify-content: flex-start;
 }
