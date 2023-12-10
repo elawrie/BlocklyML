@@ -10,7 +10,7 @@
         <field name="TRAIN_RATIO">0.2</field>
         <value name="train_data">
           <block type="attribute_selection" id="R#ra~QgO@6^8F]Y7K?z]">
-            <field name="SELECTED_ATTRIBUTES">bill_depth_mm, bill_depth_mm</field>
+            <field name="SELECTED_ATTRIBUTES">bill_depth_mm, bill_length_mm</field>
             <value name="DATA">
               <block type="drop_nulls" id="drop_nulls">
                 <value name="DATA">
