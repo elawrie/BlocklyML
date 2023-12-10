@@ -5,6 +5,7 @@
     <script src="https://unpkg.com/blockly/blockly.min.js"></script>
     <script src="https://unpkg.com/blockly/python_compressed"></script>
     <script src="custom_blocks.js"></script>
+    <script src="default_blocks.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -82,6 +83,10 @@
             toolbox: document.getElementById('toolbox'), // Optional toolbox configuration
         });
 
+        // Add default_blocks
+        var defaultBlocksDom = Blockly.utils.xml.textToDom(defaultBlocks);
+        Blockly.Xml.domToWorkspace(defaultBlocksDom, workspace);
+
         function generateCode() {
             var code = Blockly.Python.workspaceToCode(workspace);
             document.getElementById('codeDiv').innerText = code;
@@ -132,6 +137,5 @@
             reader.readAsText(file);
         }
     </script>
-    <script src="../static/custom_blocks.js"></script>
 </body>
 </html>
