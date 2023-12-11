@@ -12,9 +12,11 @@ Chris Ton-That
 
 Minna Yu
 
-## Motivation and Description
+## Documentation and Installation Videos
 
 [Link to Videos](https://drive.google.com/drive/folders/1ssnjtdZSFEEJweo56iVGAWUL2j4-6QJ8?usp=sharing)
+
+## Motivation and Description
 
 We were inspired to design this project based on our interest in machine learning. Since each group member has varying experience with the topic, we thought this would be a great learning experience no matter our current knowledge level. As of now, machine learning is an extremely sought out topic, so creating a Blockly language that assists the user through the typical scikit-learn workflow to train a model is an effective learning entry point for those who are new to the topic.
 
