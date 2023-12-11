@@ -4,7 +4,7 @@
 [Setup Instructions](https://github.com/elawrie/BlocklyML/blob/main/docs/setup-instructions.md)
 
 ## GitHub-Pages URL
-https://elawrie.github.io/BlocklyML/milestone1/index.html
+https://elawrie.github.io/BlocklyML/index.html
 ## Names of Group Members
 Evelyn Lawrie
 
